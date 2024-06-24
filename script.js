@@ -226,9 +226,30 @@ Complete the exercise in the space below:
 */
 
 const createUsername = (Fname, Lname) => {
-  for (let i = 0; i < 2; i++) {
-    // no time to complete it
+  let Fpart = "";
+  let Spart = "";
+  for (let i = 0; i < 3; i++) {
+    Fpart += Fname[i];
   }
+  for (let i = 0; i < 3; i++) {
+    Fpart += Lname[i];
+  }
+  return Fpart + Spart + (Fname.length + Lname.length);
 };
 
 console.log("Exercise 11 Result:", createUsername("Samantha", "Green"));
+
+/*
+Exercise 12: numArgs()
+
+Challenge yourself with numArgs. 
+This function should return the count of arguments passed to it when called.
+
+Complete the exercise in the space below:
+*/
+
+function numArgs() {
+  return arguments.length;
+}
+
+console.log("Exercise 12 Result:", numArgs(1, 2, 3, 4));
